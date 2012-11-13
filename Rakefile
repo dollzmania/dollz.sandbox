@@ -16,9 +16,8 @@ Hoe.spec 'sportdb-market' do
   # switch extension to .markdown for gihub formatting
   self.readme_file  = 'GEM.README.md'
   self.history_file = 'GEM.HISTORY.md'
-  
-  self.extra_deps = [
-    ['sportdb', '~> 0.5']  # NB: will include activesupport,etc. (NB: soft dep on db adapter)
-  ]
+ 
+  ## soft deps (dependencies)
+  ##   -- sportdb gem must be installed already
 
 end
