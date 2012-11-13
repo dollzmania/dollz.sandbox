@@ -1,4 +1,10 @@
 
+
+puts "hello from sportdb_plugin script (sportdb-market)"
+
+require 'sportdb/market/market'
+
+
 #require 'rubygems/command_manager'
 #require 'rubygems/mirror/command'
 #
@@ -8,6 +14,5 @@
 
 ## make it work like Rubygems? how?
 
-### SportDB::PluginMan.register :market
 
-puts "hello from sportdb_plugin script (sportdb-market)"
+### SportDB::PluginMan.register :market
