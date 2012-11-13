@@ -1,5 +1,6 @@
 
-require 'sportdb'
+## NB: do NOT require sportdb (avoid circular loading)
+#### require 'sportdb'
 
 
 ## todo: how to include 'sportdb/market/version' - does it work? ?
