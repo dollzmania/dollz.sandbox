@@ -18,6 +18,7 @@ lib/sportdb/market/market.rb
 lib/sportdb/market/models/event_quote.rb
 lib/sportdb/market/models/game.rb
 lib/sportdb/market/models/group_quote.rb
+lib/sportdb/market/models/quote.rb
 lib/sportdb/market/models/service.rb
 lib/sportdb/market/reader.rb
 lib/sportdb/market/schema.rb

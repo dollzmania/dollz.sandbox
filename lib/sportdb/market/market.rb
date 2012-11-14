@@ -70,6 +70,6 @@ module SportDB::Market
   end # method delete!
 
   puts "SportDB::Market.banner: >>#{SportDB::Market.banner}<<"
-  puts "SportDB::Market.root: >>#{SportDB::Market.root}<<"
+##  puts "SportDB::Market.root: >>#{SportDB::Market.root}<<"
 
 end  # module SportDB::Market
