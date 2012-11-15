@@ -13,11 +13,10 @@ admira      = Team.find_by_key!( 'admira' )
 austria     = Team.find_by_key!( 'austria' )
 sturm       = Team.find_by_key!( 'sturm' )
 ried        = Team.find_by_key!( 'ried' )
-wacker      = Team.find_by_key!( 'wacker' )
+innsbruck   = Team.find_by_key!( 'innsbruck' )
 mattersburg = Team.find_by_key!( 'mattersburg' )
-neustadt    = Team.find_by_key!( 'neustadt' )
+wrneustadt  = Team.find_by_key!( 'wrneustadt' )
 wac         = Team.find_by_key!( 'wac' )
-
 
 
 tipp3     = Service.find_by_key!( 'tipp3' )
@@ -33,8 +32,8 @@ tipp3_winner_odds = [
   [ ried,        75   ],
   [ mattersburg, 150  ],
   [ wac,         200  ],
-  [ neustadt,    700  ],
-  [ wacker,      850  ]]
+  [ wrneustadt,  700  ],
+  [ innsbruck,   850  ]]
 
 betathome_winner_odds = [
   [ salzburg,    1.65 ],
@@ -45,8 +44,8 @@ betathome_winner_odds = [
   [ wac,         70   ],
   [ admira,      75   ],
   [ mattersburg, 100  ],
-  [ neustadt,    250  ],
-  [ wacker,      350  ]]
+  [ wrneustadt,  250  ],
+  [ innsbruck,   350  ]]
 
 
 EventQuote.create_from_ary!( tipp3_winner_odds, tipp3, bl )

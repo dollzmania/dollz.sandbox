@@ -14,9 +14,9 @@ admira      = Team.find_by_key!( 'admira' )
 austria     = Team.find_by_key!( 'austria' )
 sturm       = Team.find_by_key!( 'sturm' )
 ried        = Team.find_by_key!( 'ried' )
-wacker      = Team.find_by_key!( 'wacker' )
+innsbruck   = Team.find_by_key!( 'innsbruck' )
 mattersburg = Team.find_by_key!( 'mattersburg' )
-neustadt    = Team.find_by_key!( 'neustadt' )
+wrneustadt  = Team.find_by_key!( 'wrneustadt' )
 wac         = Team.find_by_key!( 'wac' )
 
 ## erste liga teams
@@ -102,8 +102,8 @@ tipp3_cup_winner_odds = [
   [ ried,        12 ],
   [ wac,         20 ],
   [ mattersburg, 20 ],
-  [ neustadt,    25 ],
-  [ wacker,      25 ],
+  [ wrneustadt,  25 ],
+  [ innsbruck,   25 ],
   [ austrial,    25 ],
   [ altach,      30 ],
   [ groedig,     30 ],
