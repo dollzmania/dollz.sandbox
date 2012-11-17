@@ -43,23 +43,23 @@ mancity      dortmund      1.75   3.6   3.9
 
 3. Spieltag  - Di./Mi., 23.+24. Okt 2012   ||  Wettprogramm 43A
 
-23.10. 18:00  Spartak Moskau RUS  Benfica Lis. POR   2,50  3,00  2,30
-23.10. 20:45  Nordsjaelland DEN  Juventus Turin ITA  5,80  3,80  1,30
-23.10. 20:45  Shakhtar Don. UKR  FC Chelsea ENG      2,30  3,00  2,50
-23.10. 20:45  Bate Borisov BLR  FC Valencia ESP      2,80  2,90  2,00
-23.10. 20:45  Lille OSC FRA  Bayern München GER      6,50  3,70  1,45
-23.10. 20:45  FC Barcelona ESP  Celtic Glasgow SCO   1,05  6,50  10,00
-23.10. 20:45  Galatasaray TUR  CFR Cluj ROU          1,50  3,40  4,80
-23.10. 20:45  Manchester U. ENG  Sporting Braga POR  1,30  3,80  5,80
+Spartak Moskau RUS  Benfica Lis. POR   2,50  3,00  2,30
+Nordsjaelland DEN  Juventus Turin ITA  5,80  3,80  1,30
+Shakhtar Don. UKR  FC Chelsea ENG      2,30  3,00  2,50
+Bate Borisov BLR  FC Valencia ESP      2,80  2,90  2,00
+Lille OSC FRA  Bayern München GER      6,50  3,70  1,45
+FC Barcelona ESP  Celtic Glasgow SCO   1,05  6,50  10,00
+Galatasaray TUR  CFR Cluj ROU          1,50  3,40  4,80
+Manchester U. ENG  Sporting Braga POR  1,30  3,80  5,80
 
-24.10. 18:00  Zenit Petersb. RUS  RSC Anderlecht BEL 1,40  3,50  4,90
-24.10. 20:45  FC Porto POR  FC Dynamo Kiew UKR       1,45  3,30  5,00
-24.10. 20:45  Dinamo Zagreb CRO  Paris S.Germai FRA  4,30  3,30  1,50
-24.10. 20:45  Montpellier FRA  Olympiakos P. GRE     1,90  2,90  3,00
-24.10. 20:45  FC Arsenal ENG  FC Schalke 04 GER      1,90  3,00  3,20
-24.10. 20:45  Malaga CF ESP  AC Milan ITA            1,90  3,10  3,10
-24.10. 20:45  Bor. Dortmund GER  Real Madrid ESP     3,30  3,20  2,00
-24.10. 20:45  Ajax Amsterdam NED  Man. City ENG      3,90  3,20  1,65
+Zenit Petersb. RUS  RSC Anderlecht BEL 1,40  3,50  4,90
+FC Porto POR  FC Dynamo Kiew UKR       1,45  3,30  5,00
+Dinamo Zagreb CRO  Paris S.Germai FRA  4,30  3,30  1,50
+Montpellier FRA  Olympiakos P. GRE     1,90  2,90  3,00
+FC Arsenal ENG  FC Schalke 04 GER      1,90  3,00  3,20
+Malaga CF ESP  AC Milan ITA            1,90  3,10  3,10
+Bor. Dortmund GER  Real Madrid ESP     3,30  3,20  2,00
+Ajax Amsterdam NED  Man. City ENG      3,90  3,20  1,65
 
 
 4. Spieltag  -  Di./Mi., 6.+7. Nov 2012  || Wettprogramm

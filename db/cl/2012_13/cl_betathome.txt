@@ -48,23 +48,43 @@ Manchester United - Sporting Braga       1,30  5,15  9
 Galatasaray - CFR Cluj                   1,70  3,5   5
 
 
-4. Spieltag
+4. Spieltag // 6+7 Nov
 
-Dynamo Kiev - FC Porto                  06.11.12 20:45  2,65  3,30  2,55
-Paris Saint Germain - NK Dinamo Zagreb  06.11.12 20:45  1,15  7,00  16,00
-FC Schalke 04 - Arsenal FC              06.11.12 20:45  1,95  3,35  3,80
-Olympiakos Piraeus - HSC Montpellier    06.11.12 20:45  2,00  3,20  3,85
-AC Milan - CF Malaga                    06.11.12 20:45  2,15  3,20  3,40
-RSC Anderlecht - FC Zenit St Petersburg 06.11.12 20:45  2,85  3,30  2,40
-Manchester City - Ajax Amsterdam        06.11.12 20:45  1,30  5,50  8,20
-Real Madrid - Borussia Dortmund         06.11.12 20:45  1,40  4,50  7,40
+Dynamo Kiev - FC Porto                    2,65  3,30  2,55
+Paris Saint Germain - NK Dinamo Zagreb    1,15  7,00  16,00
+FC Schalke 04 - Arsenal FC                1,95  3,35  3,80
+Olympiakos Piraeus - HSC Montpellier      2,00  3,20  3,85
+AC Milan - CF Malaga                      2,15  3,20  3,40
+RSC Anderlecht - FC Zenit St Petersburg   2,85  3,30  2,40
+Manchester City - Ajax Amsterdam          1,30  5,50  8,20
+Real Madrid - Borussia Dortmund           1,40  4,50  7,40
 
-Chelsea FC - Shakhtar Donetsk           07.11.12 20:45  1,85  3,55  4,00
-Juventus Turin - FC Nordsjaelland       07.11.12 20:45  1,15  7,00  16,00
-CF Valencia - Bate Borisov              07.11.12 20:45  1,25  6,00  9,25
-FC Bayern München - OSC Lille           07.11.12 20:45  1,20  6,35  12,00
-Benfica Lissabon - Spartak Moscow       07.11.12 20:45  1,60  3,65  5,75
-Celtic Glasgow - FC Barcelona           07.11.12 20:45  7,50  5,00  1,35
-CFR Cluj - Galatasaray                  07.11.12 20:45  2,60  3,30  2,60
-Sporting Braga - Manchester United      07.11.12 20:45  3,80  3,35  1,95
+Chelsea FC - Shakhtar Donetsk             1,85  3,55  4,00
+Juventus Turin - FC Nordsjaelland         1,15  7,00  16,00
+CF Valencia - Bate Borisov                1,25  6,00  9,25
+FC Bayern München - OSC Lille             1,20  6,35  12,00
+Benfica Lissabon - Spartak Moscow         1,60  3,65  5,75
+Celtic Glasgow - FC Barcelona             7,50  5,00  1,35
+CFR Cluj - Galatasaray                    2,60  3,30  2,60
+Sporting Braga - Manchester United        3,80  3,35  1,95
 
+
+5. Spieltag // 20+21 Nov
+
+Bate Borisov - OSC Lille             2,00 3,40 3,60
+Spartak Moscow - FC Barcelona        7,70 4,90 1,35
+FC Nordsjaelland - Shakhtar Donetsk  9,20 5,10 1,30
+Juventus Turin - Chelsea FC          1,90 3,60 3,70
+CF Valencia - FC Bayern München      3,00 3,50 2,20
+Benfica Lissabon - Celtic Glasgow    1,50 4,15 6,00
+CFR Cluj - Sporting Braga            2,75 3,50 2,35
+Galatasaray - Manchester United      2,10 3,50 3,20
+
+FC Zenit St Petersburg - CF Malaga   1,80 3,65 4,10
+Dynamo Kiev - Paris Saint Germain    2,90 3,30 2,35
+FC Porto - NK Dinamo Zagreb          1,15 7,50 14,00
+Arsenal FC - HSC Montpellier         1,30 5,00 9,50
+FC Schalke 04 - Olympiakos Piraeus   1,45 4,25 6,75
+RSC Anderlecht - AC Milan            2,75 3,40 2,40
+Ajax Amsterdam - Borussia Dortmund   3,65 3,50 1,95
+Manchester City - Real Madrid        3,00 3,50 2,20
