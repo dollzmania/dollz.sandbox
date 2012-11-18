@@ -168,14 +168,25 @@ private
     find_team_worker!( line, 2 )
   end
   
-  
+
   def match_team_worker!( line, key, values )
     values.each do |value|
-      regex = Regexp.new( "\\b#{value}\\b" )   # wrap with world boundry (e.g. match only whole words e.g. not wac in wacker) 
+      ## todo: how to mark value as regex?
+      ##  for now escape regex special chars e.g. . to \.
+      value_for_regex = value.gsub( '.', '\.' ) # e.g. Benfica Lis.
+      
+      ## fix: todo: match accented char with or without accents
+      ##  add (ü|ue) etc.
+      ## also make - optional change to (-| ) e.g. Blau-Weiss == Blau Weiss
+      ##  reuse for all readers!
+      
+      ## nb: \b does NOT include space or newline for word boundry (only alphanums e.g. a-z0-9)
+      ## (thus add it, allows match for Benfica Lis.  for example - note . at the end)
+      regex = /\b#{value_for_regex}[\b\s]/   # wrap with world boundry (e.g. match only whole words e.g. not wac in wacker) 
       if line =~ regex
         puts "     match for team >#{key}< >#{value}<"
         # make sure @@oo{key}oo@@ doesn't match itself with other key e.g. wacker, wac, etc.
-        line.sub!( regex, "@@oo#{key}oo@@" )
+        line.sub!( regex, "@@oo#{key}oo@@ " )   # NB: add one space char at end
         return true    # break out after first match (do NOT continue)
       end
     end

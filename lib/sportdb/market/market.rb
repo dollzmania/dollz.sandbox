@@ -100,6 +100,7 @@ module SportDB::Market
   
   # delete ALL records (use with care!)
   def self.delete!
+    puts '*** deleting sport market table records/data...'
     Deleter.new.run
   end # method delete!
 
