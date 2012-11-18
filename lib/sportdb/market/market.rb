@@ -27,6 +27,39 @@ module SportDB::Market
     "#{File.expand_path( File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) )}"
   end
   
+  
+  def self.create
+    CreateDB.up
+  end
+  
+  def self.fixtures_rb  # all builtin ruby fixtures; helper for covenience
+    ['services',
+     'at/2012_13/bl',
+     'at/2012_13/cup',
+     'cl/2012_13/cl',
+     'euro/2012']
+  end
+
+  def self.load_all
+    load( fixtures_rb )
+  end
+
+  def self.fixtures_txt
+    [['betathome', 'at.2012/13',       'at/2012_13/bl_betathome'],
+     ['tipp3',     'at.2012/13',       'at/2012_13/bl_tipp3'],
+     ['betathome', 'at.cup.2012/13',   'at/2012_13/cup_betathome'],
+     ['tipp3',     'at.cup.2012/13',   'at/2012_13/cup_tipp3'],
+     ['betathome', 'cl.2012/13',       'cl/2012_13/cl_betathome'],
+     ['tipp3',     'cl.2012/13',       'cl/2012_13/cl_tipp3'],
+     ['tipico',    'euro.2012',        'euro/2012_tipico'],
+     ['tipp3',     'euro.2012',        'euro/2012_tipp3' ]]
+  end
+
+  def self.read_all
+    read( fixtures_txt )
+  end
+
+
   # load built-in (that is, bundled within the gem) named seeds
   # - pass in an array of seed names e.g. [ 'cl/teams', 'cl/2012_13/cl' ] etc.
 
@@ -70,7 +103,7 @@ module SportDB::Market
     Deleter.new.run
   end # method delete!
 
-  puts "SportDB::Market.banner: >>#{SportDB::Market.banner}<<"
-##  puts "SportDB::Market.root: >>#{SportDB::Market.root}<<"
+  ## say hello
+  puts SportDB::Market.banner
 
 end  # module SportDB::Market
