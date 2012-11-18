@@ -11,8 +11,8 @@ austriak      admira      6.8   4.5   1.2
 schwechat     sturm       9     5.5   1.1
 lask          groedig     3.1   3     1.85
 stjohann      lustenau    4.6   3.4   1.45
-sollenau      wacker      6.5   4     1.25
-vsv           neustadt    5.8   3.8   1.3
+sollenau      innsbruck   6.5   4     1.25
+vsv           wrneustadt  5.8   3.8   1.3
 dornbirn      austria     9     5.5   1.1
 badvoeslau    mattersburg 7.5   5     1.15
 stflorian     ried        6.8   4.5   1.2
