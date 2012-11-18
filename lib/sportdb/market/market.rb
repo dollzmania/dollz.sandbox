@@ -52,7 +52,8 @@ module SportDB::Market
      ['betathome', 'cl.2012/13',       'cl/2012_13/cl_betathome'],
      ['tipp3',     'cl.2012/13',       'cl/2012_13/cl_tipp3'],
      ['tipico',    'euro.2012',        'euro/2012_tipico'],
-     ['tipp3',     'euro.2012',        'euro/2012_tipp3' ]]
+     ['tipp3',     'euro.2012',        'euro/2012_tipp3' ],
+     ['tipp3',     'wmq.euro',         'world/quali_tipp3']]
   end
 
   def self.read_all
