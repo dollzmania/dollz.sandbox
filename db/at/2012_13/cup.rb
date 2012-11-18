@@ -3,8 +3,7 @@
 ##################################
 ### ÖFB Cup 2012/13 Quotes/Odds
 
-cup = Event.find_by_key!( 'at_cup_2012_13' )
-
+cup = Event.find_at_cup_2012_13!
 
 ## bundesliga teams
 

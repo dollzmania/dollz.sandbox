@@ -4,7 +4,7 @@
 ## Oesterreichische Bundesliga 2012/13 Quotes/Odds
 
 
-bl = Event.find_by_key!( 'at.2012/13' )
+bl = Event.find_at_2012_13!
 
 
 salzburg    = Team.find_by_key!( 'salzburg' )
