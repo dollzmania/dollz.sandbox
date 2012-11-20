@@ -16,8 +16,8 @@ db/euro/2012_tipico.txt
 db/euro/2012_tipp3.txt
 db/services.rb
 db/world/quali_tipp3.txt
+lib/sportdb/market.rb
 lib/sportdb/market/loader.rb
-lib/sportdb/market/market.rb
 lib/sportdb/market/models/event_quote.rb
 lib/sportdb/market/models/game.rb
 lib/sportdb/market/models/group_quote.rb
