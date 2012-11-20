@@ -6,6 +6,7 @@
 ## todo: how to include 'sportdb/market/version' - does it work? ?
 
 require 'sportdb/market/version'
+
 require 'sportdb/market/schema'
 require 'sportdb/market/models/service'
 require 'sportdb/market/models/group_quote'
@@ -22,9 +23,9 @@ module SportDB::Market
     "sportdb-market #{VERSION} on Ruby #{RUBY_VERSION} (#{RUBY_RELEASE_DATE}) [#{RUBY_PLATFORM}]"
   end
 
-  ##  cut off folders lib(#1)/sportdb(#2)/market(#3) to get to root
+  ##  cut off folders lib(#1)/sportdb(#2) to get to root
   def self.root
-    "#{File.expand_path( File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) )}"
+    "#{File.expand_path( File.dirname(File.dirname(File.dirname(__FILE__))) )}"
   end
   
   
@@ -53,7 +54,7 @@ module SportDB::Market
      ['tipp3',     'cl.2012/13',       'cl/2012_13/cl_tipp3'],
      ['tipico',    'euro.2012',        'euro/2012_tipico'],
      ['tipp3',     'euro.2012',        'euro/2012_tipp3' ],
-     ['tipp3',     'wmq.euro',         'world/quali_tipp3']]
+     ['tipp3',     'world.quali.euro.2012/13', 'world/quali_tipp3']]
   end
 
   def self.read_all
@@ -105,7 +106,8 @@ module SportDB::Market
     Deleter.new.run
   end # method delete!
 
-  ## say hello
-  puts SportDB::Market.banner
-
 end  # module SportDB::Market
+
+
+## say hello
+puts SportDB::Market.banner

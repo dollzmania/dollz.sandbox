@@ -22,9 +22,11 @@ class Reader
 
     puts "*** parsing data '#{name}' (#{path})..."
 
-    code = File.read( path )
+    code = File.read_utf8( path )
     
     load_worker( service_key, event_key, code )
+    
+    Prop.create!( key: "db.#{fixture_name_to_prop_key(name)}.version", value: "file.txt.#{File.mtime(path).strftime('%Y.%m.%d')}" )
   end
 
   def load_builtin( service_key, event_key, name ) # load from gem (built-in)
@@ -32,12 +34,29 @@ class Reader
 
     puts "*** parsing data '#{name}' (#{path})..."
 
-    code = File.read( path )
+    code = File.read_utf8( path )
     
     load_worker( service_key, event_key, code )
+
+    Prop.create!( key: "db.#{fixture_name_to_prop_key(name)}.version", value: "sport.market.txt.#{SportDB::Market::VERSION}" )
   end
 
 private
+
+  ##
+  # fix/todo: share helper w/ other readers
+  
+  # helper
+  #   change at/2012_13/bl           to at.2012/13.bl
+  #    or    quali_2012_13_europe_c  to quali.2012/13.europe.c
+  
+  def fixture_name_to_prop_key( name )
+    prop_key = name.gsub( '/', '.' )
+    prop_key = prop_key.gsub( /(\d{4})_(\d{2})/, '\1/\2' )  # 2012_13 => 2012/13
+    prop_key = prop_key.gsub( '_', '.' )
+    prop_key
+  end
+
   def load_worker( service_key, event_key, data )
 
     ## assume active activerecord connection
@@ -48,43 +67,11 @@ private
     
     puts "Quote Service #{@service.key} >#{@service.title}<"
     puts "Event #{@event.key} >#{@event.title}<"
-
-
-    ## build known teams table w/ synonyms e.g.
-    #
-    #   nb: synonyms can be a regex not just a literal string
-    # [[ 'wolfsbrug', [ 'VfL Wolfsburg' ]],
-    #  [ 'augsburg',  [ 'FC Augsburg', 'Augi2', 'Augi3' ]],
-    #  [ 'stuttgart', [ 'VfB Stuttgart' ]] ]
     
-    ### todo/fix: move known_teams code to model and reuse in readers!!
-    ##    do NOT duplicate
+    @known_teams = @event.known_teams_table
     
-    @known_teams = []
- 
-    @event.teams.each_with_index do |team,index|
-
-      titles = []
-      titles << team.title
-      titles += team.synonyms.split('|')  if team.synonyms.present?
-
-      ## NB: sort here by length (largest goes first - best match)
-      #  exclude code and key (key should always go last)
-      titles = titles.sort { |left,right| right.length <=> left.length }
-      
-      titles << team.code                  if team.code.present?
-      titles << team.key
-            
-      @known_teams << [ team.key, titles ]
-      
-      puts "  Team[#{index+1}] #{team.key} >#{titles.join('|')}<"
-    end
- 
- 
     parse_quotes( data )
-    
-    puts 'Done.'
-    
+
   end   # method load
 
 
@@ -123,25 +110,29 @@ private
     regex1 = /[ \t]+(\d{1,3}(?:\.\d{1,3})?)[ \t]+(\d{1,3}(?:\.\d{1,3})?)[ \t]+(\d{1,3}(?:\.\d{1,3})?)/
     regex2 = /[ \t]+(\d{1,3}(?:,\d{1,3})?)[ \t]+(\d{1,3}(?:,\d{1,3})?)[ \t]+(\d{1,3}(?:,\d{1,3})?)/
     
-    if line =~ regex1
-      values = [$1.to_f, $2.to_f, $3.to_f]
+    match = regex1.match( line )
+    unless match.nil?
+      values = [match[1].to_f, match[2].to_f, match[3].to_f]
       puts "   quotes: >#{values.join('|')}<"
       
       line.sub!( regex1, ' [QUOTES.EN]' )
 
       return values
-    elsif line =~ regex2
-      values = [$1.tr(',','.').to_f,
-                $2.tr(',','.').to_f,
-                $3.tr(',','.').to_f]
+    end
+    
+    match = regex2.match( line )
+    unless match.nil?
+      values = [match[1].tr(',','.').to_f,
+                match[2].tr(',','.').to_f,
+                match[3].tr(',','.').to_f]
       puts "   quotes: >#{values.join('|')}<"
       
       line.sub!( regex2, ' [QUOTES.DE]' )
 
       return values
-    else
-      return nil
     end
+    
+    nil  # return nil; nothing found
   end
 
 
@@ -171,18 +162,10 @@ private
 
   def match_team_worker!( line, key, values )
     values.each do |value|
-      ## todo: how to mark value as regex?
-      ##  for now escape regex special chars e.g. . to \.
-      value_for_regex = value.gsub( '.', '\.' ) # e.g. Benfica Lis.
-      
-      ## fix: todo: match accented char with or without accents
-      ##  add (ü|ue) etc.
-      ## also make - optional change to (-| ) e.g. Blau-Weiss == Blau Weiss
-      ##  reuse for all readers!
-      
+
       ## nb: \b does NOT include space or newline for word boundry (only alphanums e.g. a-z0-9)
       ## (thus add it, allows match for Benfica Lis.  for example - note . at the end)
-      regex = /\b#{value_for_regex}[\b\s]/   # wrap with world boundry (e.g. match only whole words e.g. not wac in wacker) 
+      regex = /\b#{value}(\b| |\t|$)/   # wrap with world boundry (e.g. match only whole words e.g. not wac in wacker) 
       if line =~ regex
         puts "     match for team >#{key}< >#{value}<"
         # make sure @@oo{key}oo@@ doesn't match itself with other key e.g. wacker, wac, etc.

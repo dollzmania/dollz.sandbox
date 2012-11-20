@@ -2,7 +2,7 @@
 
 puts "hello from sportdb_plugin script (sportdb-market)"
 
-require 'sportdb/market/market'
+require 'sportdb/market'
 
 
 #require 'rubygems/command_manager'
