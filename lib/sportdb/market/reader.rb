@@ -22,9 +22,9 @@ class Reader
 
     puts "*** parsing data '#{name}' (#{path})..."
 
-    code = File.read_utf8( path )
+    reader = LineReader.new( logger, path )
     
-    load_worker( service_key, event_key, code )
+    load_worker( service_key, event_key, reader )
     
     Prop.create!( key: "db.#{fixture_name_to_prop_key(name)}.version", value: "file.txt.#{File.mtime(path).strftime('%Y.%m.%d')}" )
   end
@@ -34,30 +34,17 @@ class Reader
 
     puts "*** parsing data '#{name}' (#{path})..."
 
-    code = File.read_utf8( path )
+    reader = LineReader.new( logger, path )
     
-    load_worker( service_key, event_key, code )
+    load_worker( service_key, event_key, reader )
 
     Prop.create!( key: "db.#{fixture_name_to_prop_key(name)}.version", value: "sport.market.txt.#{SportDB::Market::VERSION}" )
   end
 
 private
 
-  ##
-  # fix/todo: share helper w/ other readers
-  
-  # helper
-  #   change at/2012_13/bl           to at.2012/13.bl
-  #    or    quali_2012_13_europe_c  to quali.2012/13.europe.c
-  
-  def fixture_name_to_prop_key( name )
-    prop_key = name.gsub( '/', '.' )
-    prop_key = prop_key.gsub( /(\d{4})_(\d{2})/, '\1/\2' )  # 2012_13 => 2012/13
-    prop_key = prop_key.gsub( '_', '.' )
-    prop_key
-  end
 
-  def load_worker( service_key, event_key, data )
+  def load_worker( service_key, event_key, reader )
 
     ## assume active activerecord connection
     ##
@@ -70,30 +57,14 @@ private
     
     @known_teams = @event.known_teams_table
     
-    parse_quotes( data )
+    parse_quotes( reader )
 
   end   # method load
 
 
-  def is_round?( line )
-    line =~ /Spieltag|Runde/
-  end
-  
-  def find_round_pos!( line )
-    regex = /\b(\d+)\b/
-    
-    if line =~ regex
-      value = $1.to_i
-      puts "   pos: >#{value}<"
-      
-      line.sub!( regex, '[POS]' )
+  include SportDB::FixtureHelpers
 
-      return value
-    else
-      return nil
-    end    
-  end
-  
+
   def find_quotes!( line )
     # extract quotes triplet from line
     # and return it
@@ -136,74 +107,10 @@ private
   end
 
 
-  def find_team_worker!( line, index )
-    regex = /@@oo([^@]+?)oo@@/     # e.g. everything in @@ .... @@ (use non-greedy +? plus all chars but not @, that is [^@])
+  def parse_quotes( reader )
     
-    if line =~ regex
-      value = "#{$1}"
-      puts "   team#{index}: >#{value}<"
-      
-      line.sub!( regex, "[TEAM#{index}]" )
-
-      return $1
-    else
-      return nil
-    end
-  end
-
-  def find_team1!( line )
-    find_team_worker!( line, 1 )
-  end
+    reader.each_line do |line|
   
-  def find_team2!( line )
-    find_team_worker!( line, 2 )
-  end
-  
-
-  def match_team_worker!( line, key, values )
-    values.each do |value|
-
-      ## nb: \b does NOT include space or newline for word boundry (only alphanums e.g. a-z0-9)
-      ## (thus add it, allows match for Benfica Lis.  for example - note . at the end)
-      regex = /\b#{value}(\b| |\t|$)/   # wrap with world boundry (e.g. match only whole words e.g. not wac in wacker) 
-      if line =~ regex
-        puts "     match for team >#{key}< >#{value}<"
-        # make sure @@oo{key}oo@@ doesn't match itself with other key e.g. wacker, wac, etc.
-        line.sub!( regex, "@@oo#{key}oo@@ " )   # NB: add one space char at end
-        return true    # break out after first match (do NOT continue)
-      end
-    end
-    return false
-  end
-
-  def match_teams!( line )
-    @known_teams.each do |rec|
-      key    = rec[0]
-      values = rec[1]
-      match_team_worker!( line, key, values )
-    end # each known_teams    
-  end # method translate_teams!
-  
-
-  def parse_quotes( data )
-    
-    data.each_line do |line|
-  
-      if line =~ /^\s*#/
-        # skip komments and do NOT copy to result (keep comments secret!)
-        logger.debug 'skipping comment line'
-        next
-      end
-        
-      if line =~ /^\s*$/ 
-        # kommentar oder leerzeile überspringen 
-        logger.debug 'skipping blank line'
-        next
-      end
-
-      # remove leading and trailing whitespace
-      line = line.strip
-
       if is_round?( line )
         puts "parsing round line: >#{line}<"
         pos = find_round_pos!( line )
@@ -260,7 +167,7 @@ private
 
         quote.update_attributes!( quote_attribs )
       end
-    end # oldlines.each
+    end # each lines
     
   end # method parse_quotes
 
