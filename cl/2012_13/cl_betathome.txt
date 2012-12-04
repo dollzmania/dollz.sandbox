@@ -88,3 +88,24 @@ FC Schalke 04 - Olympiakos Piraeus   1,45 4,25 6,75
 RSC Anderlecht - AC Milan            2,75 3,40 2,40
 Ajax Amsterdam - Borussia Dortmund   3,65 3,50 1,95
 Manchester City - Real Madrid        3,00 3,50 2,20
+
+
+6. Spieltag // 4+5 Dec
+
+NK Dinamo Zagreb - Dynamo Kiev       3,70  3,45  1,95
+Paris Saint Germain - FC Porto       2,10  3,30  3,40
+HSC Montpellier - FC Schalke 04      3,70  3,45  1,95
+Olympiakos Piraeus - Arsenal FC      2,20  3,40  3,10
+AC Milan - FC Zenit St. Petersburg   2,50  3,25  2,75
+CF Malaga - RSC Anderlecht           2,00  3,45  3,50
+Borussia Dortmund - Manchester City  2,00  3,60  3,40
+Real Madrid - Ajax Amsterdam         1,30  5,40  8,50
+
+Chelsea FC - FC Nordsjaelland        1,08  9,50  25,00
+Shakhtar Donetsk - Juventus Turin    3,25  1,85  4,30
+FC Bayern München - Bate Borisov     1,10  8,50  22,00
+OSC Lille - CF Valencia              3,00  3,30  2,30
+Celtic Glasgow - Spartak Moscow      1,50  4,20  6,00
+FC Barcelona - Benfica Lissabon      1,50  4,30  5,75
+Manchester United - CFR Cluj         1,55  4,05  5,50
+Sporting Braga - Galatasaray         3,20  3,25  2,20

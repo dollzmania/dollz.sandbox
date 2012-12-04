@@ -14,8 +14,6 @@ admira       innsbruck    1.45  4.3   5.9
 
 
 
-
-
 13. Runde   // 27+28 Okt
 
 SV Josko Fenster Ried - SC Wiener Neustadt     1,55  3,55  6,00
@@ -26,7 +24,6 @@ SK Rapid Wien - Red Bull Salzburg              2,75  3,20  2,40
 
 
 
-
 16. Runde  // 17+18 Nov
 
 FK Austria Wien - SC Wiener Neustadt             1,20  6,00  11,00
@@ -34,3 +31,14 @@ SK Sturm Graz - SV Josko Fenster Ried            1,75  3,50  4,25
 SV Mattersburg - SK Rapid Wien                   3,75  3,35  1,90
 Wolfsberger AC - FC Admira Wacker Mödling        2,25  3,20  3,00
 Red Bull Salzburg - FC Wacker Innsbruck          1,20  6,00  11,00
+
+
+
+19. Runde  // 8+9 Dez
+
+FC Admira Wacker Mödling - SV Josko Fenster Ried   2,25  3,15  3,05
+SK Sturm Graz - Red Bull Salzburg                  2,90  3,00  2,40
+SV Mattersburg - SC Wiener Neustadt                1,90  3,30  3,80
+Wolfsberger AC - FK Austria Wien                   5,00  3,50  1,65
+SK Rapid Wien - FC Wacker Innsbruck                1,35  4,50  7,75
+
