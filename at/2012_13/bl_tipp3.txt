@@ -9,7 +9,7 @@
 
 11. Runde   - 6/7 Okt   || Wettprogramm 40B
 
-Wolfsberger AC  SV Josko Ried      2,20  3,00  2,60
+Wolfsberger AC  SV Ried           2,20  3,00  2,60
 SV Mattersburg  Red Bull Salzburg  4,00  3,30  1,80
 Admira Wacker  Wacker Innsbruck    1,45  3,60  5,20
 SK Sturm Graz  FK Austria Wien     2,40  3,10  2,70
@@ -19,7 +19,7 @@ SK Rapid Wien  SC Wiener Neustadt  1,20  5,00  7,50
 12. Runde   - 20/21 Okt  || Wettprogramm 42B
 
 Red Bull Salzburg  Wolfsberger AC  1,30  4,50  8,00
-Wacker Innsbruck  SV Josko Ried    2,60  2,90  2,30
+Wacker Innsbruck  SV Ried          2,60  2,90  2,30
 SK Sturm Graz  SV Mattersburg      1,45  3,50  5,00
 SC Wiener Neustadt  Admira Wacker  3,00  3,00  2,00
 FK Austria Wien  SK Rapid Wien     2,40  3,30  2,80
@@ -27,11 +27,9 @@ FK Austria Wien  SK Rapid Wien     2,40  3,30  2,80
 
 13. Runde   - 27/28 Okt   || Wettprogramm 43B
 
-SV Josko Ried      SC Wiener Neustadt  1,50  3,40  4,80
+SV Ried            SC Wiener Neustadt  1,50  3,40  4,80
 Wolfsberger AC     SK Sturm Graz       2,60  3,00  2,20
 Admira Wacker      FK Austria Wien     2,70  3,20  2,30
 SV Mattersburg     Wacker Innsbruck    1,75  3,20  3,50
 SK Rapid Wien      Red Bull Salzburg   2,80  3,30  2,40
-
-
 
