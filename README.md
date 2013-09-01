@@ -1,7 +1,7 @@
-sport.db-market
-===============
+# football.db-market
 
-Open Sports Database (sport.db) Plugin for Market Quotes (Odds, etc)
+
+Free open public domain football (soccer) database (football.db) addon for market quotes (odds, etc.)
 
 
 TBD
@@ -9,9 +9,10 @@ TBD
 
 ## License
 
-The `sport.db` schema, data and scripts are dedicated to the public domain.
+The `football.db` schema, data and scripts are dedicated to the public domain.
 Use it as you please with no restrictions whatsoever.
 
 ## Questions? Comments?
 
-Send them along to the [Open Sports Database & Friends Forum/Mailing List](http://groups.google.com/group/opensport). Thanks!
+Send them along to the [Open Sports Database & Friends Forum/Mailing List](http://groups.google.com/group/opensport).
+Thanks!
