@@ -4,8 +4,6 @@
 Free open public domain football (soccer) database (football.db) addon for market quotes (odds, etc.)
 
 
-TBD
-
 
 ## License
 
