@@ -45,7 +45,7 @@ celtic        = Team.find_by_key!( 'celtic' )
 manunited     = Team.find_by_key!( 'manunited' )
 braga         = Team.find_by_key!( 'braga' )
 galatasaray   = Team.find_by_key!( 'galatasaray' )
-cluj          = Team.find_by_key!( 'cluj' )
+cluj          = Team.find_by_key!( 'cfrcluj' )
 
 
 
