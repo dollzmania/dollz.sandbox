@@ -1,22 +1,23 @@
 
 2. Spieltag
 
-# spartak        celtic         1.65   3.5    5.5
-# nordsjalland   chelsea        8.2    4.75   1.35
-# juventus       donezk         1.6    3.75   5.5
-# borissow       bayern         8.5    5.4    1.3
-# valencia       lille          1.5    3.9    6.6
-# benfica        barcelona      6.1    3.8    1.55
-# cluj           manunited      5.5    3.75   1.6
-# galatasaray    braga          1.85   3.5    4
-# zenit          milan          2.25   3.3    3.1
-# kiew           zagreb         1.4    4.15   8.5
-# porto          paris          2.35   3.1    3.1
-# arsenal        olympiacos     1.3    4.95   10
-# schalke        montpellier    1.65   3.75   5
-# anderlecht     malaga         3.05   3.25   2.3
-# ajax           madrid         7      4.6    1.4
-# mancity        dortmund       1.7    3.85   4.45
+Spartak Moscow    - Celtic Glasgow          1.65   3.5    5.5
+FC Nordsjaelland  - Chelsea FC              8.2    4.75   1.35
+Juventus Turin    - Shakhtar Donetsk        1.6    3.75   5.5
+Bate Borisov     - FC Bayern München         8.5    5.4    1.3
+CF Valencia       - OSC Lille                1.5    3.9    6.6
+Benfica Lissabon   -   FC Barcelona          6.1    3.8    1.55
+CFR Cluj       -  Manchester United          5.5    3.75   1.6
+Galatasaray   - Sporting Braga                1.85   3.5    4
+
+FC Zenit St Petersburg    -  AC Milan          2.25   3.3    3.1
+Dynamo Kiev           -  NK Dinamo Zagreb        1.4    4.15   8.5
+FC Porto        -  Paris Saint Germain          2.35   3.1    3.1
+Arsenal FC      -  Olympiakos Piraeus           1.3    4.95   10
+FC Schalke 04    -    HSC Montpellier           1.65   3.75   5
+RSC Anderlecht   -  CF Malaga                   3.05   3.25   2.3
+Ajax Amsterdam    -  Real Madrid                 7      4.6    1.4
+Manchester City    -   Borussia Dortmund        1.7    3.85   4.45
 
 
 3. Spieltag
@@ -110,7 +111,7 @@ Manchester United - CFR Cluj         1,55  4,05  5,50
 Sporting Braga - Galatasaray         3,20  3,25  2,20
 
 
-7. Spieltag / Achtelfinale Hinspiele //  12+13 Feb, 19+20 Feb
+(7) Achtelfinale Hinspiele //  12+13 Feb, 19+20 Feb
 
 Celtic Glasgow - Juventus Turin        4,70  3,50  1,75
 CF Valencia - Paris Saint Germain      2,40  3,20  2,90

@@ -2,10 +2,10 @@
 
 
 ##########################################
-## Champions League 2012/13 Quotes/Odds
+# Champions League 2012/13 Quotes/Odds
 
 
-cl = Event.find_cl_2012_13!
+cl = Event.find_by_key!( 'cl.2012_13' )
 
 porto         = Team.find_by_key!( 'porto' )
 kiew          = Team.find_by_key!( 'kiew' )
@@ -49,10 +49,6 @@ cluj          = Team.find_by_key!( 'cfrcluj' )
 
 
 
-tipp3     = Service.find_by_key!( 'tipp3' )
-betathome = Service.find_by_key!( 'betathome' )
-
-
 betathome_winner_odds = [
  [ barcelona,   3.4 ],
  [ madrid,      4.2 ],
@@ -87,8 +83,11 @@ betathome_winner_odds = [
  [ zagreb,       1000 ],
  [ nordsjalland, 1000 ]]
 
-EventQuote.create_from_ary!( betathome_winner_odds, betathome, cl )
 
+tipp3     = Service.find_by_key!( 'tipp3' )
+betathome = Service.find_by_key!( 'betathome' )
+
+EventQuote.create_from_ary!( betathome_winner_odds, betathome, cl )
 
 
 ## todo: use new version constant for app module e.g. Wettpool::VERSION ??
