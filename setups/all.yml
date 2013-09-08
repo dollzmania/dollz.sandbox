@@ -1,0 +1,30 @@
+##############################
+# all quotes
+
+services:
+- services
+
+
+at:
+- at-austria/2012_13/bl
+- at-austria/2012_13/bl_betathome
+- at-austria/2012_13/bl_tipp3
+- at-austria/2012_13/cup
+- at-austria/2012_13/cup_betathome
+- at-austria/2012_13/cup_tipp3
+
+euro:
+- euro-cup/2012/euro
+- euro-cup/2012/euro_tipico
+- euro-cup/2012/euro_tipp3
+
+cl:
+- europe/2012_13/cl
+- europe/2012_13/cl_betathome
+- europe/2012_13/cl_tipp3
+- europe/2013_14/cl
+- europe/2013_14/cl_betathome
+
+world:
+- world-cup/2014/quali_europe_c_tipp3
+
