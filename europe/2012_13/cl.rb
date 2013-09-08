@@ -5,7 +5,7 @@
 # Champions League 2012/13 Quotes/Odds
 
 
-cl = Event.find_by_key!( 'cl.2012_13' )
+cl = Event.find_by_key!( 'cl.2012/13' )
 
 porto         = Team.find_by_key!( 'porto' )
 kiew          = Team.find_by_key!( 'kiew' )

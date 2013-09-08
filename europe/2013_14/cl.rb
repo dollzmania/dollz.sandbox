@@ -4,7 +4,7 @@
 # Champions League 2013/14 Quotes/Odds
 
 
-cl = Event.find_by_key!( 'cl.2013_14' )
+cl = Event.find_by_key!( 'cl.2013/14' )
 
 
 manunited   = Team.find_by_key!( 'manunited' )    # ENG
