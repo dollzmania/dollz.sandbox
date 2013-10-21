@@ -33,7 +33,7 @@ Celtic Glasgow - FC Barcelona              8.00  4.60  1.37
 CSKA Moscow - FC Viktoria Plzen            1.65  3.60  5.25
 Bayer 04 Leverkusen - Real Sociedad        1.70  3.70  4.65
 Shakhtar Donetsk - Manchester United       2.40  3.20  2.90
-Juventus de Turín - Galatasaray            1.25  5.50  11.00
+Juventus Turin - Galatasaray            1.25  5.50  11.00
 Real Madrid - FC Copenhagen                1.07  10.00  25.00
 Paris Saint Germain - Benfica              1.80  3.45  4.40
 RSC Anderlecht - Olympiakos Piraeus        2.40  3.20  2.90
@@ -41,6 +41,25 @@ Manchester City - FC Bayern München        3.30  3.40  2.10
 
 
 (5) Matchday 3  // Tu+We 22-23 October 2013
+
+FC Schalke 04 - Chelsea FC              3.10  3.30  2.25
+Steaua Bucuresti - FC Basel             2.80  3.15  2.50
+Arsenal FC - Borussia Dortmund          2.25  3.45  2.95
+Olympique Marseille - SSC Napoli        2.95  3.25  2.35
+FC Porto - FC Zenit St Petersburg       1.60  3.60  5.85
+FK Austria Wien - Atletico Madrid       9.85  4.90  1.30
+AC Milan - FC Barcelona                 6.00  4.20  1.50
+Celtic Glasgow - Ajax Amsterdam         2.45  3.30  2.75
+
+CSKA Moscow - Manchester City           4.60  3.75  1.70
+Bayer 04 Leverkusen - Shakhtar Donetsk  1.80  3.60  4.20
+Manchester United - Real Sociedad       1.50  4.25  5.80
+Galatasaray - FC Copenhagen             1.35  4.75  8.35
+Real Madrid - Juventus Turin            1.55  3.95  5.70
+Benfica - Olympiakos Piraeus            1.70  3.60  4.90
+RSC Anderlecht - Paris Saint Germain    6.70  4.30  1.45
+FC Bayern München - FC Viktoria Plzen   1.05  12.00  26.00
+
 
 (6) Matchday 4  // Tu+We 5-6 November 2013
 
