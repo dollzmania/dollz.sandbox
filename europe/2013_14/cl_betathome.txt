@@ -63,6 +63,25 @@ FC Bayern München - FC Viktoria Plzen   1.05  12.00  26.00
 
 (6) Matchday 4  // Tu+We 5-6 November 2013
 
+Real Sociedad - Manchester United         2.85  3.20  2.45
+Shakhtar Donetsk - Bayer 04 Leverkusen    2.25  3.45  2.95
+FC Copenhagen  - Galatasaray               3.20  3.25  2.20
+Juventus Turin - Real Madrid              2.35  3.50  2.75
+Olympiakos Piraeus - Benfica              2.20  3.25  3.20
+Paris Saint Germain - RSC Anderlecht      1.10  9.00  20.00
+FC Viktoria Plzen - FC Bayern München    14.00  8.00  1.14
+Manchester City - CSKA Moscow             1.18  6.00  17.00
+
+FC Zenit St. Petersburg - FC Porto        2.50  3.10  2.85
+Chelsea FC - FC Schalke 04                1.38  4.60  7.80
+FC Basel - Steaua Bucuresti               1.55  3.90  5.80
+Borussia Dortmund - Arsenal FC            1.65  3.75  5.00
+SSC Napoli - Olympique Marseille          1.38  4.50  8.00
+Atletico Madrid - FK Austria Wien         1.10  10.00  16.00
+Ajax Amsterdam - Celtic Glasgow           1.75  3.60  4.50
+FC Barcelona - AC Milan                   1.20  6.30  12.00
+
+
 (7) Matchday 5  // Tu+We 26-27 November 2013
 
 (8) Matchday 6  // Tu+We 10-11 December 2013
