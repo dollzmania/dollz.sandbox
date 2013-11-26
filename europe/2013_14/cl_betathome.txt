@@ -84,5 +84,24 @@ FC Barcelona - AC Milan                   1.20  6.30  12.00
 
 (7) Matchday 5  // Tu+We 26-27 November 2013
 
+FC Zenit St Petersburg - Atletico Madrid    2.05  3.35  3.50
+Steaua Bucuresti - FC Schalke 04            3.90  3.30  1.95
+FC Basel - Chelsea FC                       4.65  3.50  1.75
+Arsenal FC - Olympique Marseille            1.22  5.90  12.00
+Borussia Dortmund - SSC Napoli              1.50  4.30  5.80
+Ajax Amsterdam - FC Barcelona               6.35  4.00  1.50
+Celtic Glasgow - AC Milan                   2.80  3.15  2.50
+FC Porto - FK Austria Wien                  1.15  7.25  15.00
+
+CSKA Moscow - FC Bayern München             7.50  4.40  1.40
+Paris Saint Germain - Olympiacos Piraeus    1.35  4.65  8.50
+Real Madrid - Galatasaray                   1.25  5.80  10.00
+Bayer 04 Leverkusen - Manchester United     2.40  3.30  2.85
+Shakhtar Donetsk - Real Sociedad            1.60  3.75  5.60
+RSC Anderlecht - Benfica                    3.55  3.30  2.05
+Juventus Turin - FC Copenhagen              1.10  9.00  20.00
+Manchester City - FC Viktoria Plzen         1.15  7.50  14.00
+
+
 (8) Matchday 6  // Tu+We 10-11 December 2013
 
