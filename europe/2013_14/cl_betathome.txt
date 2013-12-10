@@ -105,3 +105,22 @@ Manchester City - FC Viktoria Plzen         1.15  7.50  14.00
 
 (8) Matchday 6  // Tu+We 10-11 December 2013
 
+Manchester United - Shakhtar Donetsk    2.05  3.35  3.50
+Real Sociedad - Bayer 04 Leverkusen     3.90  3.60  1.85
+FC Kopenhagen - Real Madrid             8.00  4.80  1.35
+Galatasaray - Juventus Turin            4.00  3.55  1.85
+Olympiacos Piraeus - RSC Anderlecht     1.35  4.85  7.85
+Benfica Lissabon - Paris Saint Germain  2.05  3.60  3.25
+FC Bayern München - Manchester City     1.40  4.65  7.00
+FC Viktoria Plzen - CSKA Moscow         2.35  3.25  2.95
+
+    
+Chelsea FC - Steaua Bucuresti            1.18  6.50  14.00
+FC Schalke 04 - FC Basel                 1.70  3.60  4.80
+Olympique Marseille - Borussia Dortmund  7.00  4.60  1.40
+SSC Napoli - Arsenal FC                  2.40  3.30  2.85
+Atletico Madrid - FC Porto               2.10  3.40  3.30
+FK Austria Wien - FC Zenit St. Petersburg  5.75  3.95  1.55
+AC Milan - Ajax Amsterdam                1.60  3.80  5.50
+FC Barcelona - Celtic Glasgow            1.15  7.80  13.00
+
