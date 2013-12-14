@@ -1,4 +1,4 @@
-# Europe
+# Champions League (Europe)
 
 Free open public domain football (soccer) data (football.db) addon for market quotes (odds, etc.)
 
