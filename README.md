@@ -1,7 +1,6 @@
-# football.db.market
+# Europe
 
-
-Free open public domain football (soccer) database (football.db) addon for market quotes (odds, etc.)
+Free open public domain football (soccer) data (football.db) addon for market quotes (odds, etc.)
 
 
 

@@ -1,13 +1,16 @@
 ##############################
 # 2013/14 quotes
 
+### move to gem or world or market ?? -fix/cleanup!!!!
 services:
 - services
 
-cl:
-- europe/2013_14/cl
-- europe/2013_14/cl_betathome
 
-world:
-- world-cup/2014/quali_europe_c_tipp3
+cl:
+- europe!/2013_14/cl
+- europe!/2013_14/cl_betathome
+
+# move to world-cup 
+# world:
+# - world-cup/2014/quali_europe_c_tipp3
 
