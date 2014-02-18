@@ -124,3 +124,17 @@ FK Austria Wien - FC Zenit St. Petersburg  5.75  3.95  1.55
 AC Milan - Ajax Amsterdam                1.60  3.80  5.50
 FC Barcelona - Celtic Glasgow            1.15  7.80  13.00
 
+
+(9) Round of 16 / 1st Leg
+
+Bayer 04 Leverkusen - Paris Saint Germain  3.30  3.30  2.15
+Manchester City - FC Barcelona             2.75  3.50  2.35
+AC Milan - Atletico Madrid                 3.50  3.10  2.15
+Arsenal FC - FC Bayern München             4.60  3.75  1.70
+
+Zenit St. Petersburg - Borussia Dortmund   3.90  3.60  1.85
+Olympiakos Piraeus - Manchester United     3.30  3.30  2.15
+FC Schalke 04 - Real Madrid                6.10  4.10  1.50
+Galatasaray - Chelsea FC                   3.95  3.40  1.90
+
+
