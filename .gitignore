@@ -1,0 +1,5 @@
+###
+# ignore all tmp and o directories
+o/
+tmp/
+dl/
