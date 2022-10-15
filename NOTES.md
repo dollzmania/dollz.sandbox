@@ -12,7 +12,17 @@ apps & more:
    - <https://github.com/luuolli/dollzmania/blob/master/assets/json/dolls.json>  - assets via urls
 
 
+## Lil Amara's Gothmaker
+
+- <https://www.angelfire.com/falcon/majinamara/dollz/gothmaker.html>
 
 
 
+
+## Links / History
+
+Dollz Mania
+
+- <https://dollzmania.neocities.org/>
+  - <https://dollzmania.neocities.org/history/history-overview.html> The History of Dollz
 
