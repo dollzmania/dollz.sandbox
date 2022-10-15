@@ -125,21 +125,23 @@ def cheatsheet
   buf = String.new('')
   buf << "# Cheatsheet Dollz in #{@outdir}\n\n"
 
-  each_dir( "#{@outdir}/*" ) do |dir|
-     pngs = Dir.glob( "#{dir}/**/*.png")
+  each_dir( "#{@outdir}/**/*" ) do |dir|
+     pngs = Dir.glob( "#{dir}/*.png")
      puts "  #{pngs.size} png(s) in #{dir}"
 
+     next if pngs.size == 0   ##  skip empty directories (do NOT add to report for now)
 
-     buf << "## /#{File.basename(dir)}\n\n"
+     relative_dir_path = dir.sub( "#{@outdir}/", '' )
+     buf << "## /#{relative_dir_path}\n\n"
      buf << "#{pngs.size} png(s): "
      png_basenames = pngs.map { |png| File.basename( png, File.extname( png )) }
      buf <<  png_basenames.join( ' · ' )
      buf << "\n\n"
 
      pngs.each do |png|
-        path = png.sub( "#{@outdir}/", '' )   ## make relative (cut-off leading outdir path)
+        relative_png_path = png.sub( "#{@outdir}/", '' )   ## make relative (cut-off leading outdir path)
         ## todo - add tooltip title - how possible in markdown?
-        buf << "![](#{path}) "
+        buf << %Q<![](#{relative_png_path} "#{File.basename(png, File.extname(png))}") >
      end
      buf << "\n\n"
   end
@@ -336,69 +338,3 @@ end
 
 end  # class Page
 
-
-
-
-DOLLZ_BASE_URL = 'https://web.archive.org/web/20170825102421im_/http://www.dollzmaniadressupgames.com'
-
-
-page = Page.new( read_text( "./dl/mythical.html" ),
-                base_url: DOLLZ_BASE_URL,
-                dir: './no3',
-                slug: 'mythical'
-                )
-# page.dump_images
-# page.download_images
-# page.export
-# page.convert
-page.lint
-
-page = Page.new( read_text( "./dl/avatar.html" ),
-                   base_url: DOLLZ_BASE_URL,
-                   dir: './no3',
-                   slug: 'avatar'
-                )
-# page.dump_images
-# page.download_images
-# page.export
-page.lint
-
-page = Page.new( read_text("./dl/funfashions.html"),
-                 base_url: DOLLZ_BASE_URL,
-                 dir: './no3',
-                 slug: 'funfashions'
-               )
-# page.dump_images
-# page.download_images
-# page.export
-page.lint
-
-
-## note:
-##    (auto-)rename for duplicates with diffenent extsions e.g.
-##   dresses/reddress.gif  & dresses/reddress.art
-##   shirts/blacktop6.gif  & shirts/blacktop6.art
-##   headsandbodyparts/gothhead42.gif & headsandbodyparts/gothhead42.art
-##    conflict if all converted to .png!!!
-
-page = Page.new( read_text("./dl/gothmaker.html"),
-                 base_url: 'https://www.angelfire.com/falcon/majinamara/dollz',
-                 dir: './no2',
-                 slug: 'goth',
-                 renames: {
-                   'dresses/reddress.art' => 'dresses/reddress2.art',
-                   'shirts/blacktop6.art' => 'shirts/blacktop6a.art',
-                   'headsandbodyparts/gothhead42.art' => 'headsandbodyparts/gothhead42a.art',
-                 }
-               )
-# page.dump_images
-# page.download_images
-# page.export
-
-# page.convert
-page.lint
-# page.clean!
-page.cheatsheet
-
-
-puts "bye"
