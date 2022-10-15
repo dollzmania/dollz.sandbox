@@ -3,6 +3,25 @@ require  'fetcher'
 require  'nokogiri'
 
 
+## check - move each_dir helper upstream to cocos - why? why not?
+def each_dir( glob, exclude: [], &blk )
+  dirs = Dir.glob( glob ).select {|f| File.directory?(f) }
+
+  puts "  #{dirs.size} dir(s):"
+  pp dirs
+
+  dirs.each do |dir|
+     basename = File.basename( dir )
+     ## check for sandbox/tmp/i/etc.  and skip
+     next if exclude.include?( basename )
+
+     blk.call( dir )
+  end
+end
+
+
+
+
 
 def _download_image( image_url, outpath,
                     cache: true,
@@ -97,6 +116,38 @@ def clean!
       FileUtils.rm( file )
    end
 end
+
+
+
+def cheatsheet
+  ## change/rename to   GALLERY / DESIGNSHEET or such - why? why not?
+
+  buf = String.new('')
+  buf << "# Cheatsheet Dollz in #{@outdir}\n\n"
+
+  each_dir( "#{@outdir}/*" ) do |dir|
+     pngs = Dir.glob( "#{dir}/**/*.png")
+     puts "  #{pngs.size} png(s) in #{dir}"
+
+
+     buf << "## /#{File.basename(dir)}\n\n"
+     buf << "#{pngs.size} png(s): "
+     png_basenames = pngs.map { |png| File.basename( png, File.extname( png )) }
+     buf <<  png_basenames.join( ' · ' )
+     buf << "\n\n"
+
+     pngs.each do |png|
+        path = png.sub( "#{@outdir}/", '' )   ## make relative (cut-off leading outdir path)
+        ## todo - add tooltip title - how possible in markdown?
+        buf << "![](#{path}) "
+     end
+     buf << "\n\n"
+  end
+
+  write_text( "#{@outdir}/CHEATSHEET.md", buf )
+end
+
+
 
 
 def convert
@@ -347,6 +398,7 @@ page = Page.new( read_text("./dl/gothmaker.html"),
 # page.convert
 page.lint
 # page.clean!
+page.cheatsheet
 
 
 puts "bye"
