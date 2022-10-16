@@ -1,6 +1,12 @@
 # Dollz Cheatsheet - bikini
 
-Bodies · Bottoms · Legs · Heads · Accessories
+Heads · Bodies · Bottoms · Legs · Accessories
+
+## Heads
+
+34 png(s): blond2 · blonde3 · hooft1 · blonde4 · blondeglasses · blond135 · blond167 · blondehoeriesloeriehoofd · blondjerules · usamenshoofd · blond181 · brownhair4 · brownhair3 · haarmeisjebruin · bruinhaaar · bruinhaarmeisjah · bruinhaarmiessie · haarbruin · brownhair5 · hooft2 · hooft3 · apartedame · brillieeop · meisjemeteenhoofd · hoofdhaaar · hoofdzwarthaar · langzwarthaar · oranjeboven · readhair3 · redhair1 · head137 · head038 · rozehaar · hoofdrozehaar
+
+![](prepprops/blond2.png "blond2") ![](prepprops/blonde3.png "blonde3") ![](prepprops/hooft1.png "hooft1") ![](prepprops/blonde4.png "blonde4") ![](prepprops/blondeglasses.png "blondeglasses") ![](prepprops/blond135.png "blond135") ![](prepprops/blond167.png "blond167") ![](prepprops/blondehoeriesloeriehoofd.png "blondehoeriesloeriehoofd") ![](prepprops/blondjerules.png "blondjerules") ![](prepprops/usamenshoofd.png "usamenshoofd") ![](prepprops/blond181.png "blond181") ![](prepprops/brownhair4.png "brownhair4") ![](prepprops/brownhair3.png "brownhair3") ![](prepprops/haarmeisjebruin.png "haarmeisjebruin") ![](prepprops/bruinhaaar.png "bruinhaaar") ![](prepprops/bruinhaarmeisjah.png "bruinhaarmeisjah") ![](prepprops/bruinhaarmiessie.png "bruinhaarmiessie") ![](prepprops/haarbruin.png "haarbruin") ![](prepprops/brownhair5.png "brownhair5") ![](prepprops/hooft2.png "hooft2") ![](prepprops/hooft3.png "hooft3") ![](prepprops/apartedame.png "apartedame") ![](prepprops/brillieeop.png "brillieeop") ![](prepprops/meisjemeteenhoofd.png "meisjemeteenhoofd") ![](prepprops/hoofdhaaar.png "hoofdhaaar") ![](prepprops/hoofdzwarthaar.png "hoofdzwarthaar") ![](prepprops/langzwarthaar.png "langzwarthaar") ![](prepprops/oranjeboven.png "oranjeboven") ![](prepprops/readhair3.png "readhair3") ![](prepprops/redhair1.png "redhair1") ![](prepprops/head137.png "head137") ![](prepprops/head038.png "head038") ![](prepprops/rozehaar.png "rozehaar") ![](prepprops/hoofdrozehaar.png "hoofdrozehaar") 
 
 ## Bodies
 
@@ -19,12 +25,6 @@ Bodies · Bottoms · Legs · Heads · Accessories
 22 png(s): bl1 · bl2 · bl3 · bl4 · bl5 · bl6 · bl7 · bl8 · bl9 · bl10 · bl11 · bl12 · bl13 · bl14 · bl15 · bl17 · bl18 · bl19 · bl20 · bl21 · bl22 · bl23
 
 ![](bikiniprops/bl1.png "bl1") ![](bikiniprops/bl2.png "bl2") ![](bikiniprops/bl3.png "bl3") ![](bikiniprops/bl4.png "bl4") ![](bikiniprops/bl5.png "bl5") ![](bikiniprops/bl6.png "bl6") ![](bikiniprops/bl7.png "bl7") ![](bikiniprops/bl8.png "bl8") ![](bikiniprops/bl9.png "bl9") ![](bikiniprops/bl10.png "bl10") ![](bikiniprops/bl11.png "bl11") ![](bikiniprops/bl12.png "bl12") ![](bikiniprops/bl13.png "bl13") ![](bikiniprops/bl14.png "bl14") ![](bikiniprops/bl15.png "bl15") ![](bikiniprops/bl17.png "bl17") ![](bikiniprops/bl18.png "bl18") ![](bikiniprops/bl19.png "bl19") ![](bikiniprops/bl20.png "bl20") ![](bikiniprops/bl21.png "bl21") ![](bikiniprops/bl22.png "bl22") ![](bikiniprops/bl23.png "bl23") 
-
-## Heads
-
-34 png(s): blond2 · blonde3 · hooft1 · blonde4 · blondeglasses · blond135 · blond167 · blondehoeriesloeriehoofd · blondjerules · usamenshoofd · blond181 · brownhair4 · brownhair3 · haarmeisjebruin · bruinhaaar · bruinhaarmeisjah · bruinhaarmiessie · haarbruin · brownhair5 · hooft2 · hooft3 · apartedame · brillieeop · meisjemeteenhoofd · hoofdhaaar · hoofdzwarthaar · langzwarthaar · oranjeboven · readhair3 · redhair1 · head137 · head038 · rozehaar · hoofdrozehaar
-
-![](prepprops/blond2.png "blond2") ![](prepprops/blonde3.png "blonde3") ![](prepprops/hooft1.png "hooft1") ![](prepprops/blonde4.png "blonde4") ![](prepprops/blondeglasses.png "blondeglasses") ![](prepprops/blond135.png "blond135") ![](prepprops/blond167.png "blond167") ![](prepprops/blondehoeriesloeriehoofd.png "blondehoeriesloeriehoofd") ![](prepprops/blondjerules.png "blondjerules") ![](prepprops/usamenshoofd.png "usamenshoofd") ![](prepprops/blond181.png "blond181") ![](prepprops/brownhair4.png "brownhair4") ![](prepprops/brownhair3.png "brownhair3") ![](prepprops/haarmeisjebruin.png "haarmeisjebruin") ![](prepprops/bruinhaaar.png "bruinhaaar") ![](prepprops/bruinhaarmeisjah.png "bruinhaarmeisjah") ![](prepprops/bruinhaarmiessie.png "bruinhaarmiessie") ![](prepprops/haarbruin.png "haarbruin") ![](prepprops/brownhair5.png "brownhair5") ![](prepprops/hooft2.png "hooft2") ![](prepprops/hooft3.png "hooft3") ![](prepprops/apartedame.png "apartedame") ![](prepprops/brillieeop.png "brillieeop") ![](prepprops/meisjemeteenhoofd.png "meisjemeteenhoofd") ![](prepprops/hoofdhaaar.png "hoofdhaaar") ![](prepprops/hoofdzwarthaar.png "hoofdzwarthaar") ![](prepprops/langzwarthaar.png "langzwarthaar") ![](prepprops/oranjeboven.png "oranjeboven") ![](prepprops/readhair3.png "readhair3") ![](prepprops/redhair1.png "redhair1") ![](prepprops/head137.png "head137") ![](prepprops/head038.png "head038") ![](prepprops/rozehaar.png "rozehaar") ![](prepprops/hoofdrozehaar.png "hoofdrozehaar") 
 
 ## Accessories
 

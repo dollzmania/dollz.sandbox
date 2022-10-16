@@ -40,7 +40,7 @@ page = Page.new( read_text("./dl/bikinimaker.html"),
 # page.lint
 
 # page.clean!
-# page.cheatsheet
+page.cheatsheet
 
 
 
@@ -58,7 +58,7 @@ page = Page.new( read_text("./dl/prepgothmaker.html"),
 # page.lint
 
 # page.clean!
-# page.cheatsheet
+page.cheatsheet
 
 
 page = Page.new( read_text("./dl/maleprepmaker.html"),
