@@ -144,7 +144,7 @@ def cheatsheet
   ## change/rename to   GALLERY / DESIGNSHEET or such - why? why not?
 
   buf = String.new('')
-  buf << "# Cheatsheet Dollz in #{@outdir}\n\n"
+  buf << "# Dollz in #{@outdir}\n\n"
 
   each_dir( "#{@outdir}/**/*" ) do |dir|
      pngs = Dir.glob( "#{dir}/*.png")
@@ -167,7 +167,7 @@ def cheatsheet
      buf << "\n\n"
   end
 
-  write_text( "#{@outdir}/CHEATSHEET.md", buf )
+  write_text( "#{@outdir}/README.md", buf )
 end
 
 
