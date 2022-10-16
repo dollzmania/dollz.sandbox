@@ -57,7 +57,7 @@ page = Page.new( read_text("./dl/prepgothmaker.html"),
 # page.lint
 
 # page.clean!
-# page.cheatsheet
+page.cheatsheet
 
 
 page = Page.new( read_text("./dl/maleprepmaker.html"),
@@ -93,8 +93,8 @@ page = Page.new( read_text("./dl/prepmaker.html"),
 # page.convert
 # page.lint
 
-page.clean!
-page.cheatsheet
+# page.clean!
+# page.cheatsheet
 
 
 

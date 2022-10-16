@@ -1,5 +1,31 @@
 # Notes
 
+
+## Wayback Machine API Notes
+
+Fix missing images  - 404 (Not Found) or 403 (Forbidden) etc.
+
+https://archive.org/help/wayback_api.php
+
+https://web.archive.org/web/*/http://www.easydoll.com/maleprepprops/mh3.gif
+
+https://archive.org/wayback/available?url=www.easydoll.com/maleprepprops/mh3.gif
+
+``` json
+{"url": "www.easydoll.com/maleprepprops/mh3.gif",
+  "archived_snapshots":
+  {"closest":
+   {"status": "200",
+    "available": true,
+    "url": "http://web.archive.org/web/20210611004904/http://www.easydoll.com/maleprepprops/mh3.gif",
+    "timestamp": "20210611004904"}}}
+```
+
+- check if special im_ required in url web request?
+-   for js js_ gets used - any others?
+
+
+
 ## Easy Doll (via Web Archive)
 
 - <https://web.archive.org/web/20210723204435/http://www.easydoll.com/>

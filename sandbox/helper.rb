@@ -139,8 +139,66 @@ def clean!
 end
 
 
-
 def cheatsheet
+  ## change/rename to   GALLERY / DESIGNSHEET or such - why? why not?
+
+  path = "#{@outdir}/#{@slug}.csv"
+  recs = read_csv( path )
+  puts "   #{recs.size} image(s)"
+
+  ## auto-fill categories
+  last_category = ''
+  recs.each do |rec|
+      category = rec['category']
+      if category.empty?
+         rec['category'] = last_category
+      else
+         last_category = category
+      end
+  end
+
+  pp recs
+
+  ## reorg by category
+  by_category = {}
+  recs.each do |rec|
+    category = rec['category']
+    ary = by_category[ category ] ||= []
+    ary << rec
+  end
+
+  puts "   #{by_category.size} categories:"
+  puts by_category.keys.join( ', ' )
+
+
+
+  buf = String.new('')
+  buf << "# Dollz Cheatsheet - #{@slug}\n\n"
+
+  buf << by_category.keys.join( ' · ' )
+  buf << "\n\n"
+
+  by_category.each do |category, recs|
+
+    buf << "## #{category}\n\n"
+    buf << "#{recs.size} png(s): "
+    png_basenames = recs.map { |rec| File.basename( rec['path'], File.extname( rec['path'] )) }
+    buf <<  png_basenames.join( ' · ' )
+    buf << "\n\n"
+
+    recs.each do |rec|
+      path = rec['path']
+      buf << %Q<![](#{path} "#{File.basename(path, File.extname(path))}") >
+    end
+    buf << "\n\n"
+  end
+
+  write_text( "#{@outdir}/CHEATSHEET.#{@slug.upcase}.md", buf )
+end
+
+
+
+def summary   ## change to contents / directory / or ????
   ## change/rename to   GALLERY / DESIGNSHEET or such - why? why not?
 
   buf = String.new('')
@@ -161,7 +219,6 @@ def cheatsheet
 
      pngs.each do |png|
         relative_png_path = png.sub( "#{@outdir}/", '' )   ## make relative (cut-off leading outdir path)
-        ## todo - add tooltip title - how possible in markdown?
         buf << %Q<![](#{relative_png_path} "#{File.basename(png, File.extname(png))}") >
      end
      buf << "\n\n"
@@ -289,6 +346,42 @@ end
 
 
 def export
+  recs = []
+
+  each_image do |img,i|
+    img_src = img['src']
+
+    ## normalize for outpath lookup
+    path = _local_img_src( img_src )
+
+    ## note: change extension to always .png for now!!!
+    extname  = File.extname( path )
+    basename = File.basename( path, extname )
+    dirname  = File.dirname( path )
+
+    png_path = "#{dirname}/#{basename}.png"
+
+    ## note: category, name  for now always empty
+    recs  << [png_path, '', '']
+  end
+
+
+  headers = ['path', 'category', 'names']
+  buf = String.new('')
+  buf << headers.join(', ')
+  buf << "\n"
+  recs.each do |rec|
+    buf << rec.join( ', ' )
+    buf << "\n"
+  end
+
+  path = "./tmp/#{@slug}.csv"
+  write_text( path, buf )
+end
+
+
+
+def export_images
   recs = []
 
   images = Hash.new(0)   ## check for duplicates (auto-remove)
