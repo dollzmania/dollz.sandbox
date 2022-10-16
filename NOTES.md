@@ -1,5 +1,24 @@
 # Notes
 
+## Easy Doll (via Web Archive)
+
+- <https://web.archive.org/web/20210723204435/http://www.easydoll.com/>
+  - <https://web.archive.org/web/20190918015239/http://www.easydoll.com/menu/dollmakers.php>
+
+
+Styles:
+- Prep - <https://web.archive.org/web/20190919212245/http://www.easydoll.com/dollmakers/prepmaker.php>
+- Male Prep - <https://web.archive.org/web/20190919212407/http://www.easydoll.com/dollmakers/maleprepmaker.php>
+   -  check -why is 403 (forbidden/missing) - https://web.archive.org/web/20210401044458im_/http://www.easydoll.com/maleprepprops/mh3.gif  (use a differen timtestamp/snapshot?)
+- Thugette - <https://web.archive.org/web/20070108101832/http://www.easydoll.com/dollmakers/thugettemaker.php>
+- Thug Male - <https://web.archive.org/web/20191020133721/http://www.easydoll.com/dollmakers/thugmalemaker.php>
+- Prep Goth -  <https://web.archive.org/web/20080730202955/http://www.easydoll.com/dollmakers/prepgothmaker.php>
+- Bikini  - <https://web.archive.org/web/20190919233033/http://www.easydoll.com/dollmakers/prepbikinimaker.php>
+- Pajama - <https://web.archive.org/web/20190920000201/http://www.easydoll.com/dollmakers/preppajamamaker.php>
+- Adidas - <https://web.archive.org/web/20200217042836/http://www.easydoll.com/dollmakers/prepadidasmaker.php>
+
+
+
 
 ##  Dollz Mania  (via Web Archive)
 
@@ -15,6 +34,15 @@ apps & more:
 ## Lil Amara's Gothmaker
 
 - <https://www.angelfire.com/falcon/majinamara/dollz/gothmaker.html>
+
+
+
+## Bonita Maker (via Web Archive)
+
+- <https://web.archive.org/web/20190928232745/http://www.easydoll.com/dollmakers/bonitamaker.php>
+
+
+
 
 
 

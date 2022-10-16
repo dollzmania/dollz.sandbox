@@ -34,7 +34,13 @@ def _download_image( image_url, outpath,
 
     res = Fetcher.get( image_url )
 
-   if res.code == '200'
+    if res.code == '404'   # not found;  continue for now
+      content_type   = res.content_type
+      content_length = res.content_length
+
+      puts "  content_type: #{content_type}, content_length: #{content_length}"
+      puts "!! WARN  - not found image; sorry - #{res.code} #{res.message}"
+    elsif res.code == '200'
       content_type   = res.content_type
       content_length = res.content_length
 
@@ -72,6 +78,8 @@ def norm_path( path )
    ## e.g. fashion/coat_fash001%20(1).png
    ##      fashion/coat_fash001_(1).png
    path = path.gsub( '%20', '_' )
+   path = path.gsub( '%5b', '[' )
+   path = path.gsub( '%5d', ']' )
 
    ##  change // to /
    ##  e.g. headsandbodyparts//crossedlegs.gif
@@ -89,21 +97,34 @@ def initialize( html,
                 base_url:,
                 dir:,
                 slug:,
-                renames: nil )
+                renames: nil,
+                wayback: nil )
   @doc = Nokogiri::HTML::DocumentFragment.parse( html )
 
   @base_url = base_url
   @outdir   = dir
   @slug     = slug
   @renames  = renames
+
+  ## for now hard-code base_url if wayback is present with fixed timestamp (capture)
+  ## e.g.     20190919233033 + http://www.easydoll.com
+  ##       =>   https://web.archive.org/web/20190919233033im_/http://www.easydoll.com
+  @wayback  = wayback
+  @base_url = "https://web.archive.org/web/#{wayback}im_/#{base_url}"   if wayback
 end
+
 
 
 def each_image( &blk )
-  @doc.search('img').each_with_index do |img, i|
-    blk.call( img, i )
-  end
+   path = "#{@outdir}/#{@slug}.images.csv"
+   recs = read_csv( path )
+   puts "   #{recs.size} image(s)"
+
+   recs.each_with_index do |img,i|
+     blk.call( img, i )
+   end
 end
+
 
 
 def clean!
@@ -157,9 +178,6 @@ def convert
    ##   AND converted to .png (standard/default) format
    each_image do |img,i|
     img_src = img['src']
-
-    ## auto-remove base url (make relative)
-    img_src = img_src.sub( "#{@base_url}/", '' )
 
     ## normalize for outpath lookup
     path = _local_img_src( img_src )
@@ -226,9 +244,6 @@ def lint
    each_image do |img,i|
     img_src = img['src']
 
-    ## auto-remove base url (make relative)
-    img_src = img_src.sub( "#{@base_url}/", '' )
-
     ## normalize for outpath lookup
     path = _local_img_src( img_src )
 
@@ -272,14 +287,31 @@ def lint
   end
 end
 
+
 def export
   recs = []
-  each_image do |img,i|
 
+  images = Hash.new(0)   ## check for duplicates (auto-remove)
+
+
+  uri = URI.parse( @base_url )
+  base_url2 = @base_url.sub( "#{uri.scheme}://#{uri.host}", '' )
+  puts "  base_url2 >#{base_url2}<"
+
+  @doc.search('img').each_with_index do |img, i|
     img_src = img['src']
 
     ## auto-remove base url (make relative)
+    ## absolute variant w/o domain
     img_src = img_src.sub( "#{@base_url}/", '' )
+    img_src = img_src.sub( "#{base_url2}/", '' )
+
+    count = images[ img_src ] += 1
+    if count > 1
+       puts "  WARN - skipping duplicate image >#{img_src}< w/ count at #{count}"
+       next
+    end
+
     recs << [img_src]
   end
 
@@ -297,6 +329,7 @@ def export
 end
 
 
+
 def dump_images
    each_image do |img,i|
      print "[#{i+1}]  "
@@ -311,30 +344,27 @@ end
 
 
 def download_images
-   each_image do |img, i|
-    puts "==> #{i+1}"
-    img_src = img['src']
-    puts "   #{img_src}"
 
-    ## auto-remove base url (make relative)
-    img_src = img_src.sub( "#{@base_url}/", '' )
-    if img_src.start_with?( 'http' )
-      puts "!! image src NOT relative; sorry"
-      exit 1
-    end
+  ## note: always use
+  ##        prepared exported image list!!!
 
-    outpath = "#{@outdir}/#{norm_path( img_src ).downcase}"
+  path = "#{@outdir}/#{@slug}.images.csv"
+   recs = read_csv( path )
+   puts "   #{recs.size} image(s)"
 
-    img_url = "#{@base_url}/#{img_src}"
-    puts "    #{img_url}"
+   recs.each_with_index do |rec,i|
+    img_src = rec['src']
+    puts "==> #{i+1} / #{recs.size}  -  #{img_src}"
 
-    _download_image( img_url, outpath, delay_in_s: 3 )
-    ## break if i > 100
-  end
+     path = _local_img_src( img_src )
+     outpath = "#{@outdir}/#{path}"
+
+     img_url = "#{@base_url}/#{img_src}"
+     # puts "    #{img_url}"
+
+     _download_image( img_url, outpath, delay_in_s: 3 )
+   end
 end
-
-
-
 
 end  # class Page
 
